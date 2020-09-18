@@ -8,7 +8,7 @@ a, a:hover{text-decoration: none;}
 }
 
 .app-wrapper{
-  background: #04b4e0 url('./images/main_bg.png') center center / cover;
+  /* background: #04b4e0 url('./images/main_bg.png') center center / cover; */
 }
 .br-30{
   border-radius: 30px;
@@ -18,7 +18,9 @@ a, a:hover{text-decoration: none;}
   max-height: 150px;
   border-radius: 200px;
   overflow: hidden;
-  box-shadow: 0px 0px 0px 2px #222222;
+}
+.bs-1{
+  box-shadow: 1px 1px 1px #222222;
 }
 .social-icon, .nav-iconn{
   display: inline-flex;
@@ -27,12 +29,77 @@ a, a:hover{text-decoration: none;}
   width: 40px;
   height: 40px;
   border-radius: 30px;
-  /* background: white; */
   text-align: center;
+}
+button.nav-iconn{
+  border: none;
+  background: transparent;
+  color: white;
+  position: relative;
 }
 @media (min-width: 992px){
   .profile-pic-block{
     max-width: 175px !important;
     max-height: 175px;
+  }
+  button.nav-iconn{
+    outline: none;
+  }
+  button.nav-iconn:hover, button.nav-iconn.active{
+    width: auto;
+    animation: onhover 0.5s forwards;
+  }
+  button.nav-iconn.active{
+    animation: scale 0.5s forwards;
+  }
+  button.nav-iconn:hover > span, button.nav-iconn.active > span{
+    display: block !important;
+    text-align: center;
+    letter-spacing: 1px;
+    background: #3f3f3f;
+    padding: 4px 8px 4px 0px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    animation: onhoverspan 0.5s forwards;
+  }
+  button.nav-iconn:hover > i, button.nav-iconn.active > i{
+    font-size: 12px !important;
+  }
+  .to-top{
+    animation: totop 1s forwards;
+  }
+}
+@keyframes totop {
+  from {
+    transform:translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform:translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes scale {
+  from {
+    transform: scale(0.8)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+@keyframes onhover {
+  from {
+    transform: scale(1)
+  }
+  to {
+    transform: scale(0.8)
+  }
+}
+@keyframes onhoverspan {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
   }
 }
