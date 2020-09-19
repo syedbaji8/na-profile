@@ -20,7 +20,7 @@ a, a:hover{text-decoration: none;}
   overflow: hidden;
 }
 .bs-1{
-  box-shadow: 1px 1px 1px #222222;
+  box-shadow: 1px 1px 1px var(--dark-black);
 }
 .social-icon, .nav-iconn{
   display: inline-flex;
@@ -44,26 +44,26 @@ button.nav-iconn{
   }
   button.nav-iconn{
     outline: none;
-  }
-  button.nav-iconn:hover, button.nav-iconn.active{
-    width: auto;
-    animation: onhover 0.5s forwards;
+    width: 125px;
+    transform: scale(0.8);
+    border: solid 0.5px var(--darkblack-half);
+    animation: ondeactiveAnim 0.5s forwards;
   }
   button.nav-iconn.active{
-    animation: scale 0.5s forwards;
+    animation: onactiveAnim 0.5s alternate forwards;
+    background: var(--button-black);
   }
-  button.nav-iconn:hover > span, button.nav-iconn.active > span{
-    display: block !important;
-    text-align: center;
+  button.nav-iconn > span{
+    min-width: 60px;
+    text-align: right;
     letter-spacing: 1px;
-    background: #3f3f3f;
-    padding: 4px 8px 4px 0px;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    animation: onhoverspan 0.5s forwards;
   }
-  button.nav-iconn:hover > i, button.nav-iconn.active > i{
-    font-size: 12px !important;
+  button.nav-iconn > i{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .to-top{
     animation: totop 1s forwards;
@@ -79,27 +79,19 @@ button.nav-iconn{
     opacity: 1;
   }
 }
-@keyframes scale {
+@keyframes onactiveAnim {
   from {
-    transform: scale(0.8)
+    transform: scale(0.8);
   }
   to {
     transform: scale(1)
   }
 }
-@keyframes onhover {
+@keyframes ondeactiveAnim {
   from {
     transform: scale(1)
   }
   to {
-    transform: scale(0.8)
-  }
-}
-@keyframes onhoverspan {
-  from {
-    transform: scale(0)
-  }
-  to {
-    transform: scale(1)
+    transform: scale(0.8);
   }
 }

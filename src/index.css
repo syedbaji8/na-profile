@@ -1,8 +1,18 @@
 :root {
-  --white: #f5f5f5;
+  --white: #bdbdbd;
+  --mid-white: #f5f5f5;
+  --pure-white: #ffffff;
+
+  --dark-black: #222222;
+  --darkblack-half: rgba(34, 34, 34,0.2);
+  --light-black: #444444;
+  --button-black: #3f3f3f;
 }
 html, body, #root, .app-wrapper{
   height: 100vh;
+}
+.text-white{
+  color: var(--white) !important;
 }
 .font-8 {
   font-size: 0.5rem;
@@ -94,7 +104,7 @@ html, body, #root, .app-wrapper{
   background: #444444;
 }
 .theme-dark .card-bg{
-  background: #222222;
+  background: var(--dark-black);
 }
 .bg-theme-light{
   background: lightpink;
@@ -108,7 +118,7 @@ html, body, #root, .app-wrapper{
   color: var(--white);
 }
 .theme-dark a, .theme-dark button.nav-iconn{
-  background: #3f3f3f;
+  background: var(--light-black);
   color: var(--white);
   text-decoration: none;
 }
