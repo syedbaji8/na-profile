@@ -4,8 +4,10 @@ const About = () => {
     return (
         <div className="col-lg-12 p-0 d-flex flex-row flex-wrap align-items-start justify-content-start h-100 to-top">
             <div className="col-lg-12 p-0 d-flex flex-row flex-wrap align-items-start justify-content-start">
+                <div className="col-lg-12 p-0 in-row bb-1 mb-4">
+                    <h1 className="text-white m-0">About me</h1>
+                </div>
                 <div className="col-lg-12 p-0 in-row">
-                    <h1 className="text-white">About me</h1>
                     <p className="text-white">I have more than 7 years of professional experience in User Interface and Application development using web technologies for building content management systems, eCommerce applications, microsites, landing pages, email newsletters, etc. Currently working as UI Developer with Langoor Ditigal Pvt Ltd., I am adept at developing web-based application systems with highly interactive user interfaces, rich user experiences, building custom responsive themes & functionality.</p>
                 </div>
                 <div className="col-lg-12 p-0 in-row mb-5">
@@ -49,25 +51,25 @@ const About = () => {
                     </div>
                     <div className="col-lg-12 p-0 d-flex flex-row flex-wrap align-items-start justify-content-between timeline-second-style">
                         <div className="col-lg-12 p-0">
-                            <div class="timeline-item clearfix">
-                                <div class="left-part">
-                                    <h5 class="item-period">2010</h5>
-                                    <span class="item-company">Arena Animation</span>
+                            <div className="timeline-item clearfix">
+                                <div className="left-part">
+                                    <h5 className="item-period">2010</h5>
+                                    <span className="item-company">Arena Animation</span>
                                 </div>
-                                <div class="divider"></div>
-                                <div class="right-part">
-                                    <h4 class="item-title">Web Designing Diploma</h4>
+                                <div className="divider"></div>
+                                <div className="right-part">
+                                    <h4 className="item-title">Web Designing Diploma</h4>
                                     <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.</p>
                                 </div>
                             </div>
-                            <div class="timeline-item clearfix">
-                                <div class="left-part">
-                                    <h5 class="item-period">2009</h5>
-                                    <span class="item-company">CMTES Computer Education</span>
+                            <div className="timeline-item clearfix">
+                                <div className="left-part">
+                                    <h5 className="item-period">2009</h5>
+                                    <span className="item-company">CMTES Computer Education</span>
                                 </div>
-                                <div class="divider"></div>
-                                <div class="right-part">
-                                    <h4 class="item-title">Graphic Design</h4>
+                                <div className="divider"></div>
+                                <div className="right-part">
+                                    <h4 className="item-title">Graphic Design</h4>
                                     <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.</p>
                                 </div>
                             </div>

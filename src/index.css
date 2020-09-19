@@ -1,4 +1,5 @@
 :root {
+  --vl-white: rgba(189, 189, 189,0.1);
   --white: #bdbdbd;
   --mid-white: #f5f5f5;
   --pure-white: #ffffff;
@@ -196,7 +197,9 @@ html, body, #root, .app-wrapper{
   align-items: center;
   justify-content: space-between;
 }
-
+.bb-1{
+  border-bottom: dashed 1px var(--vl-white);
+}
 
 .timeline-second-style .timeline-item {
   position: relative;
@@ -255,8 +258,61 @@ html, body, #root, .app-wrapper{
   padding-right: 15px;
   vertical-align: top;
 }
-
-
+.skills-info.skills-second-style {
+  margin-bottom: 30px;
+}
+.skills-info.skills-second-style h4 {
+  font-size: 13px;
+  line-height: 1.1em;
+  position: relative;
+  float: left;
+  margin: 0 0 4px;
+}
+.skills-second-style .skill-value {
+  font-size: 11px;
+  line-height: 1.1em;
+  position: relative;
+  float: right;
+  margin: 0 0 4px;
+  color: #aaa;
+}
+.skills-second-style .skill-container {
+  position: relative;
+  display: inline-block;
+  background-color: #222;
+  border: 1px solid #04b4e0;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 10px;
+  margin-bottom: 8px;
+  width: 100%;
+}
+.skills-second-style .skill-container:before {
+  content: '';
+  position: absolute;
+  background-color: #04b4e0;
+}
+.skills-second-style .skill-container.skill-1 .skill-percentage {
+  width: 95%;
+}
+.skills-second-style .skill-percentage {
+  background-color: #04b4e0;
+  border: 2px solid #222;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  height: 8px;
+  padding: 0;
+}
+.contact-page .box{
+  background-color: #333;
+  border: 1px solid #444;
+  min-height: 150px;
+}
 
 
 
