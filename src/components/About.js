@@ -14,22 +14,26 @@ const About = () => {
                     <div className="col-lg-4 pl-lg-0">
                         <div className="col-lg-12 p-0">
                             <div className="col-lg-12 p-0">
-                                <p className="mb-3">
-                                    <label className="text-bold">Phone:</label>
-                                    <br />
-                                    +91 - 7338324752
-                                </p>
+                                <a href="tel:7338324752">
+                                    <p className="mb-3">
+                                        <label className="text-bold">Phone:</label>
+                                        <br />
+                                        +91 - 7338324752
+                                    </p>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-4 pl-lg-0">
                         <div className="col-lg-12 p-0">
                             <div className="col-lg-12 p-0">
-                                <p className="mb-3">
-                                    <label className="text-bold">Email:</label>
-                                    <br />
-                                    syedbaji8@gmail.com
-                                </p>
+                                <a href="mailto:syedbaji8@gmail.com">
+                                    <p className="mb-3">
+                                        <label className="text-bold">Email:</label>
+                                        <br />
+                                        syedbaji8@gmail.com
+                                    </p>
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -16,7 +16,7 @@ function App(props) {
   const [device, setdevice] = useState(false);
   // const [mobnav, setmobnav] = useState('');
   const [menuBool, setmenuBool] = useState(false);
-  const [rendercomponent, setrendercomponent] = useState(null);
+  const [rendercomponent, setrendercomponent] = useState('Home');
   const [containerHeight, setcontainerHeight] = useState(null);
   const sectionHeightStyle = {
     'height': windowHeight
