@@ -6,6 +6,7 @@ import Resume from './components/Resume'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import Navigation from './components/Navigation'
+import PageNotFound from './components/PageNotFound'
 
 
 function App(props) {
@@ -16,8 +17,12 @@ function App(props) {
   // const [mobnav, setmobnav] = useState('');
   const [menuBool, setmenuBool] = useState(false);
   const [rendercomponent, setrendercomponent] = useState(null);
+  const [containerHeight, setcontainerHeight] = useState(null);
   const sectionHeightStyle = {
     'height': windowHeight
+  }
+  const containerHeightStyle = {
+    'height': containerHeight
   }
   const onToggleMenuClick = (bool) => {
     setmenuBool(!bool)
@@ -36,6 +41,7 @@ function App(props) {
       }
     }
     windowWidthInit();
+    setcontainerHeight(windowHeight - (windowWidth < 769?64:192))
   },[])
   return (
     <div className="app-wrapper bg-gradient">
@@ -80,7 +86,9 @@ function App(props) {
                   </div>
                 </div>
                 <div className="col-lg-8 p-3 p-lg-5 right-block card-bg br-30">
-                  {rendercomponent === 'Home'?<Home />:rendercomponent === 'About'?<About />:rendercomponent === 'Resume'?<Resume />:rendercomponent === 'Portfolio'?<Portfolio />:rendercomponent === 'Contact'?<Contact />:<Home />}
+                  <div className="col-lg-12 p-0 content-container" style={containerHeightStyle}>
+                    {rendercomponent === 'Home'?<Home />:rendercomponent === 'About'?<About />:rendercomponent === 'Resume'?<Resume />:rendercomponent === 'Portfolio'?<Portfolio />:rendercomponent === 'Contact'?<Contact />:<Home />}
+                  </div>
                 </div>
                 <div className="col-lg-1 p-0 last-block desktop-navigation-block br-30 d-none d-lg-block">
                   <Navigation active={rendercomponent} onClickGotoComponentFn={onClickGotoComponentFn} />

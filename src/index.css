@@ -100,11 +100,17 @@ html, body, #root, .app-wrapper{
 .bg-gray{
   background: #EBEBEB;
 }
+.theme-dark *{
+  color: var(--white);
+}
 .theme-dark .bg-theme{
   background: #444444;
 }
 .theme-dark .card-bg{
   background: var(--dark-black);
+}
+.content-container{
+  overflow-y: auto;
 }
 .bg-theme-light{
   background: lightpink;
@@ -297,6 +303,25 @@ html, body, #root, .app-wrapper{
   .font-lg-30 {
     font-size: 1.875rem;
   }
+  /* width */
+  .content-container::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .content-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+   
+  /* Handle */
+  .content-container::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  .content-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 }
 @media (min-width: 1200px) {
   .navbar-expand-xl .navbar-toggler {
@@ -341,23 +366,4 @@ html, body, #root, .app-wrapper{
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1261px;
   }
-}
-/* width */
-.left-block.mobile.on-open::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-.left-block.mobile.on-open::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
- 
-/* Handle */
-.left-block.mobile.on-open::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-.left-block.mobile.on-open::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }

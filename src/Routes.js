@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Route, Link, NavLink, Switch} from 'react-router-dom';
 import App from './App';
 import About from './About';
-import PageNotFound from './PageNotFound';
+import PageNotFound from './components/PageNotFound'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import './App.css';
