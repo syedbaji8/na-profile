@@ -85,7 +85,7 @@ function App(props) {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-8 p-3 p-lg-5 right-block card-bg br-30">
+                <div className="col-lg-8 pt-5 p-3 p-lg-5 right-block card-bg br-30">
                   <div className="col-lg-12 p-0 content-container" style={containerHeightStyle}>
                     {rendercomponent === 'Home'?<Home />:rendercomponent === 'About'?<About />:rendercomponent === 'Resume'?<Resume />:rendercomponent === 'Portfolio'?<Portfolio />:rendercomponent === 'Contact'?<Contact />:<Home />}
                   </div>
