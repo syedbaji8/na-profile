@@ -41,7 +41,7 @@ function App(props) {
       }
     }
     windowWidthInit();
-    setcontainerHeight(windowHeight - (windowWidth < 769?64:192))
+    setcontainerHeight(windowHeight - (windowWidth < 769?96:192))
   },[])
   return (
     <div className="app-wrapper bg-gradient">
