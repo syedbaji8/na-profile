@@ -9,6 +9,9 @@
   --light-black: #444444;
   --button-black: #3f3f3f;
 }
+html {
+  scroll-behavior: smooth;
+}
 html, body, #root, .app-wrapper{
   height: 100vh;
 }

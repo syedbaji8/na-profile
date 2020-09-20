@@ -1,0 +1,14 @@
+.title
+{
+    margin-bottom: 20px;
+    padding:20px
+}
+.item-img-block{
+    max-height: 160px;
+    overflow: hidden;
+}
+.img
+{
+    height: auto;
+    width:100%
+}
