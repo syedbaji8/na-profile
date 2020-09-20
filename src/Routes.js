@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Link, NavLink, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import App from './App';
 import About from './About';
 import PageNotFound from './components/PageNotFound'

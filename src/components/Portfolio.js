@@ -1,9 +1,10 @@
 import React from 'react';
 import Owldemo1 from './OwlDemo/Owldemo1'
-// import OwlDemo from './Owldemo'
+import Loading from './Loading'
 
-const Portfolio = () => {
-    return (
+const Portfolio = (props) => {
+    const {isLoading, setisLoading, user:{profileData}} = props;
+    return isLoading?<Loading setisLoading={setisLoading} />:(
         <div className="col-lg-12 p-0 d-flex flex-row flex-wrap align-items-start justify-content-start h-100 to-top">
             <div className="col-lg-12 p-0 d-flex flex-row flex-wrap align-items-start justify-content-start">
                 <div className="col-lg-12 p-0 in-row bb-1 mb-2">

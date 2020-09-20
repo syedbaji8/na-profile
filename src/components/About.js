@@ -1,14 +1,16 @@
 import React from 'react';
+import Loading from './Loading'
 
-const About = () => {
-    return (
+const About = (props) => {
+    const { isLoading, setisLoading, user: { profileData: { aboutDescription, mobile, email, address, education } } } = props;
+    return isLoading ? <Loading setisLoading={setisLoading} /> : (
         <div className="col-lg-12 p-0 d-flex flex-row flex-wrap align-items-start justify-content-start h-100 to-top">
             <div className="col-lg-12 p-0 d-flex flex-row flex-wrap align-items-start justify-content-start">
                 <div className="col-lg-12 p-0 in-row bb-1 mb-4">
                     <h1 className="text-white m-0">About me</h1>
                 </div>
                 <div className="col-lg-12 p-0 in-row">
-                    <p className="text-white">I have more than 7 years of professional experience in User Interface and Application development using web technologies for building content management systems, eCommerce applications, microsites, landing pages, email newsletters, etc. Currently working as UI Developer with Langoor Ditigal Pvt Ltd., I am adept at developing web-based application systems with highly interactive user interfaces, rich user experiences, building custom responsive themes & functionality.</p>
+                    <p className="text-white">{aboutDescription}</p>
                 </div>
                 <div className="col-lg-12 p-0 in-row mb-5">
                     <div className="col-lg-4 pl-lg-0">
@@ -18,7 +20,7 @@ const About = () => {
                                     <p className="mb-3">
                                         <label className="text-bold">Phone:</label>
                                         <br />
-                                        +91 - 7338324752
+                                        +91 - {mobile}
                                     </p>
                                 </a>
                             </div>
@@ -31,7 +33,7 @@ const About = () => {
                                     <p className="mb-3">
                                         <label className="text-bold">Email:</label>
                                         <br />
-                                        syedbaji8@gmail.com
+                                        {email}
                                     </p>
                                 </a>
                             </div>
@@ -43,7 +45,7 @@ const About = () => {
                                 <p className="mb-3">
                                     <label className="text-bold">Address:</label>
                                     <br />
-                                    Bengaluru, HSR Layout
+                                    {address}
                                 </p>
                             </div>
                         </div>
@@ -55,28 +57,24 @@ const About = () => {
                     </div>
                     <div className="col-lg-12 p-0 d-flex flex-row flex-wrap align-items-start justify-content-between timeline-second-style">
                         <div className="col-lg-12 p-0">
-                            <div className="timeline-item clearfix">
-                                <div className="left-part">
-                                    <h5 className="item-period">2010</h5>
-                                    <span className="item-company">Arena Animation</span>
-                                </div>
-                                <div className="divider"></div>
-                                <div className="right-part">
-                                    <h4 className="item-title">Web Designing Diploma</h4>
-                                    <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.</p>
-                                </div>
-                            </div>
-                            <div className="timeline-item clearfix">
-                                <div className="left-part">
-                                    <h5 className="item-period">2009</h5>
-                                    <span className="item-company">CMTES Computer Education</span>
-                                </div>
-                                <div className="divider"></div>
-                                <div className="right-part">
-                                    <h4 className="item-title">Graphic Design</h4>
-                                    <p>Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis ante.</p>
-                                </div>
-                            </div>
+                            {
+                                education.length > 0 ? education.map((item) => {
+                                    const { dateTo, college, course, where } = item;
+                                    return (
+                                        <div className="timeline-item clearfix">
+                                            <div className="left-part">
+                                                <h5 className="item-period">{dateTo}</h5>
+                                                <span className="item-company">{college}</span>
+                                            </div>
+                                            <div className="divider"></div>
+                                            <div className="right-part">
+                                                <h4 className="item-title">{course}</h4>
+                                                <p>{college}, {where}</p>
+                                            </div>
+                                        </div>
+                                    )
+                                }) : "No data found"
+                            }
                         </div>
                     </div>
                 </div>

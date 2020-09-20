@@ -19,7 +19,7 @@ class Owldemo1 extends Component {
                                 <div className="col-lg-12 p-0 item-img-block">
                                     <img alt="sampeimage" className="img" src={process.env.PUBLIC_URL + '/images/livayur.png'} />
                                     <div className="p-0 on-over-work-item">
-                                        <a className="d-flex flex-row flex-wrap align-items-center justify-content-center h-100" href="https://livayur.com/" target="_blank">
+                                        <a className="d-flex flex-row flex-wrap align-items-center justify-content-center h-100" href="https://livayur.com/" target="_blank" rel="noopener noreferrer">
                                             <i className="fa fa-external-link-square font-30"></i>
                                         </a>
                                     </div>
@@ -29,7 +29,7 @@ class Owldemo1 extends Component {
                                 <div className="col-lg-12 p-0 item-img-block">
                                     <img alt="sampeimage" className="img" src={process.env.PUBLIC_URL + '/images/home-clearance-premium.jpg'} />
                                     <div className="p-0 on-over-work-item">
-                                        <a className="d-flex flex-row flex-wrap align-items-center justify-content-center h-100" href="https://www.homeclearance.com.au/" target="_blank">
+                                        <a className="d-flex flex-row flex-wrap align-items-center justify-content-center h-100" href="https://www.homeclearance.com.au/" target="_blank" rel="noopener noreferrer">
                                             <i className="fa fa-external-link-square font-30"></i>
                                         </a>
                                     </div>
@@ -39,7 +39,7 @@ class Owldemo1 extends Component {
                                 <div className="col-lg-12 p-0 item-img-block">
                                     <img alt="sampeimage" className="img" src={process.env.PUBLIC_URL + '/images/nabler.png'} />
                                     <div className="p-0 on-over-work-item">
-                                        <a className="d-flex flex-row flex-wrap align-items-center justify-content-center h-100" href="https://www.nabler.com/" target="_blank">
+                                        <a className="d-flex flex-row flex-wrap align-items-center justify-content-center h-100" href="https://www.nabler.com/" target="_blank" rel="noopener noreferrer">
                                             <i className="fa fa-external-link-square font-30"></i>
                                         </a>
                                     </div>
@@ -49,7 +49,7 @@ class Owldemo1 extends Component {
                                 <div className="col-lg-12 p-0 item-img-block">
                                     <img alt="sampeimage" className="img" src={process.env.PUBLIC_URL + '/images/prathima.png'} />
                                     <div className="p-0 on-over-work-item">
-                                        <a className="d-flex flex-row flex-wrap align-items-center justify-content-center h-100" href="https://prathimahospitals.com/" target="_blank">
+                                        <a className="d-flex flex-row flex-wrap align-items-center justify-content-center h-100" href="https://prathimahospitals.com/" target="_blank" rel="noopener noreferrer">
                                             <i className="fa fa-external-link-square font-30"></i>
                                         </a>
                                     </div>
@@ -59,7 +59,7 @@ class Owldemo1 extends Component {
                                 <div className="col-lg-12 p-0 item-img-block">
                                     <img alt="sampeimage" className="img" src={process.env.PUBLIC_URL + '/images/myearth.png'} />
                                     <div className="p-0 on-over-work-item">
-                                        <a className="d-flex flex-row flex-wrap align-items-center justify-content-center h-100" href="/" target="_blank">
+                                        <a className="d-flex flex-row flex-wrap align-items-center justify-content-center h-100" href="/" target="_blank" rel="noopener noreferrer">
                                             <i className="fa fa-external-link-square font-30"></i>
                                         </a>
                                     </div>
@@ -69,7 +69,7 @@ class Owldemo1 extends Component {
                                 <div className="col-lg-12 p-0 item-img-block">
                                     <img alt="sampeimage" className="img" src={process.env.PUBLIC_URL + '/images/tys361.png'} />
                                     <div className="p-0 on-over-work-item">
-                                        <a className="d-flex flex-row flex-wrap align-items-center justify-content-center h-100" href="http://www.tys361.com/" target="_blank">
+                                        <a className="d-flex flex-row flex-wrap align-items-center justify-content-center h-100" href="http://www.tys361.com/" target="_blank" rel="noopener noreferrer">
                                             <i className="fa fa-external-link-square font-30"></i>
                                         </a>
                                     </div>
@@ -79,7 +79,7 @@ class Owldemo1 extends Component {
                                 <div className="col-lg-12 p-0 item-img-block">
                                     <img alt="sampeimage" className="img" src={process.env.PUBLIC_URL + '/images/sitasurgicals.png'} />
                                     <div className="p-0 on-over-work-item">
-                                        <a className="d-flex flex-row flex-wrap align-items-center justify-content-center h-100" href="http://sitasurgicals.in/" target="_blank">
+                                        <a className="d-flex flex-row flex-wrap align-items-center justify-content-center h-100" href="http://sitasurgicals.in/" target="_blank" rel="noopener noreferrer">
                                             <i className="fa fa-external-link-square font-30"></i>
                                         </a>
                                     </div>
@@ -89,7 +89,7 @@ class Owldemo1 extends Component {
                                 <div className="col-lg-12 p-0 item-img-block">
                                     <img alt="sampeimage" className="img" src={process.env.PUBLIC_URL + '/images/ammaphysiotherapy.png'} />
                                     <div className="p-0 on-over-work-item">
-                                        <a className="d-flex flex-row flex-wrap align-items-center justify-content-center h-100" href="https://ammaphysiotherapy.com/" target="_blank">
+                                        <a className="d-flex flex-row flex-wrap align-items-center justify-content-center h-100" href="https://ammaphysiotherapy.com/" target="_blank" rel="noopener noreferrer">
                                             <i className="fa fa-external-link-square font-30"></i>
                                         </a>
                                     </div>

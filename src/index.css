@@ -104,8 +104,18 @@ html, body, #root, .app-wrapper{
 .bg-gray{
   background: #EBEBEB;
 }
-.theme-dark *{
+.theme-dark p, 
+.theme-dark span, 
+.theme-dark a, 
+.theme-dark label,
+.theme-dark button,
+.theme-dark i{
   color: var(--white);
+}
+.theme-dark a:hover,
+.theme-dark button:hover,
+.theme-dark a:hover i{
+  color: var(--light-black);
 }
 .theme-dark .bg-theme{
   background: #444444;
@@ -134,7 +144,7 @@ html, body, #root, .app-wrapper{
 }
 .theme-dark a:hover{
   background: var(--white);
-  color: #444444;
+  color: #444444 !important;
 }
 .theme-light a{
   color: red;
