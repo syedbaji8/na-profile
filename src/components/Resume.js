@@ -21,7 +21,7 @@ const Resume = () => {
                                 <div className="divider"></div>
                                 <div className="right-part">
                                     <h4 className="item-title font-18 font-lg-22">UI Developer</h4>
-                                    <p>Tech lead, UI / functionality development,frontend architecture planning</p>
+                                    <p>Tech lead, UI / functionality development, frontend architecture planning</p>
                                 </div>
                             </div>
                             <div className="timeline-item clearfix">
