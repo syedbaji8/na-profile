@@ -54,20 +54,20 @@ function App(props) {
     if(userid === item.userId){
       return item;
     }
-  }).map((item) => {
-    return <Leftcard key={item.userId} isLoading={isLoading} setisLoading={setisLoading} user={item} rendercomponent={rendercomponent} onClickGotoComponentFn={onClickGotoComponentFn} />
+  }).map((item, index) => {
+    return <Leftcard key={index} isLoading={isLoading} setisLoading={setisLoading} user={item} rendercomponent={rendercomponent} onClickGotoComponentFn={onClickGotoComponentFn} />
   });
   const oneComponent = data.length>0 && data.filter((item) => {
     if(userid === item.userId){
       return item;
     }
-  }).map((item) => {
-    return rendercomponent === 'Home'?<Home user={item} isLoading={isLoading} setisLoading={setisLoading} />:
-    rendercomponent === 'About'?<About user={item} isLoading={isLoading} setisLoading={setisLoading} />:
-    rendercomponent === 'Resume'?<Resume user={item} isLoading={isLoading} setisLoading={setisLoading} />:
-    rendercomponent === 'Portfolio'?<Portfolio user={item} isLoading={isLoading} setisLoading={setisLoading} />:
-    rendercomponent === 'Contact'?<Contact user={item} isLoading={isLoading} setisLoading={setisLoading} />:
-    <Home user={item} isLoading={isLoading} setisLoading={setisLoading} />
+  }).map((item, index) => {
+    return rendercomponent === 'Home'?<Home key={index} user={item} isLoading={isLoading} setisLoading={setisLoading} />:
+    rendercomponent === 'About'?<About key={index} user={item} isLoading={isLoading} setisLoading={setisLoading} />:
+    rendercomponent === 'Resume'?<Resume key={index} user={item} isLoading={isLoading} setisLoading={setisLoading} />:
+    rendercomponent === 'Portfolio'?<Portfolio key={index} user={item} isLoading={isLoading} setisLoading={setisLoading} />:
+    rendercomponent === 'Contact'?<Contact key={index} user={item} isLoading={isLoading} setisLoading={setisLoading} />:
+    <Home key={index} user={item} isLoading={isLoading} setisLoading={setisLoading} />
   });
   
   return (

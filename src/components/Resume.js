@@ -17,10 +17,10 @@ const Resume = (props) => {
                             </div>
                             <div className="col-lg-12 p-0 mb-4">
                                 {
-                                    experience.length > 0 ? experience.map((item) => {
+                                    experience.length > 0 ? experience.map((item, index) => {
                                         const { dateFrom, dateTo, company, role, responsibility } = item;
                                         return (
-                                            <div key={company} className="timeline-item clearfix">
+                                            <div key={index} className="timeline-item clearfix">
                                                 <div className="left-part">
                                                     <h5 className="item-period font-16">{dateFrom} - {dateTo ? dateTo : '*'}</h5>
                                                     <span className="item-company font-14">{company}</span>
@@ -38,20 +38,20 @@ const Resume = (props) => {
                         </div>
                         <div className="col-lg-5">
                             {
-                                skillSet.length > 0 ? skillSet.map((item) => {
+                                skillSet.length > 0 ? skillSet.map((item, index) => {
                                     const { groupTitle, skills } = item;
                                     return (
-                                        <div className="col-lg-12 p-0 skill-set">
+                                        <div key={index} className="col-lg-12 p-0 skill-set">
                                             <div className="col-lg-12 p-0 mb-4">
                                                 <h3>{groupTitle}</h3>
                                             </div>
                                             <div className="skills-info skills-second-style">
                                                 {
-                                                    skills.length > 0 ? skills.map((skillitem) => {
+                                                    skills.length > 0 ? skills.map((skillitem, index) => {
                                                         const { name, percentage } = skillitem;
                                                         return (
                                                             <>
-                                                                <div className="skill clearfix">
+                                                                <div key={index} className="skill clearfix">
                                                                     <h4>{name}</h4>
                                                                     <div className="skill-value">{percentage}%</div>
                                                                 </div>
