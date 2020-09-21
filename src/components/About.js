@@ -58,10 +58,10 @@ const About = (props) => {
                     <div className="col-lg-12 p-0 d-flex flex-row flex-wrap align-items-start justify-content-between timeline-second-style">
                         <div className="col-lg-12 p-0">
                             {
-                                education.length > 0 ? education.map((item) => {
+                                education.length > 0 ? education.map((item, index) => {
                                     const { dateTo, college, course, where } = item;
                                     return (
-                                        <div className="timeline-item clearfix">
+                                        <div key={index} className="timeline-item clearfix">
                                             <div className="left-part">
                                                 <h5 className="item-period">{dateTo}</h5>
                                                 <span className="item-company">{college}</span>
