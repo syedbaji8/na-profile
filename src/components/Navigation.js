@@ -1,8 +1,9 @@
 import React from 'react';
 import Loading from './Loading'
+import {Link} from 'react-router-dom'
 
 const Navigation = (props) => {
-    const {active, isLoading, setisLoading} = props;
+    const {active, isLoading, setisLoading, isAdmin} = props;
     return isLoading?<Loading setisLoading={setisLoading} />:(
         <div className="col-lg-12 p-0 d-flex flex-row flex-lg-column flex-wrap justify-content-around align-items-center align-content-center py-0 py-lg-5 font-20 font-lg-24 h-100 nav-container">
             <button className={`nav-iconn p-0 px-3 mb-3 mb-lg-0 bs-1 ${active === 'Home'?'active':''}`} title="Home" onClick={() => { props.onClickGotoComponentFn('Home') }}>
@@ -25,6 +26,12 @@ const Navigation = (props) => {
                 <span className="font-14 mr-2">Contact </span>
                 <i className="font-20 fa fa-envelope"></i>
             </button>
+            {isAdmin && (<button className={`nav-iconn p-0 px-3 bs-1 admin-button`}>
+                <Link to="/about">
+                    <span className="font-14 mr-2">Admin </span>
+                    <i className="font-20 fa fa-envelope"></i>
+                </Link>
+            </button>)}
         </div>
     );
 }

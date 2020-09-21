@@ -9,12 +9,12 @@
             "name": "Syed Baji Shaik",
             "position": "Front-end Developer",
             "socialLinks": {
-                "facebook": "www.facebook.com",
-                "twitter": "www.twitter.com",
-                "linkedin":"www.linkedin.com",
-                "youtube":"www.youtube.com"
+                "facebook": "https://www.facebook.com",
+                "twitter": "https://www.twitter.com",
+                "linkedin":"https://www.linkedin.com",
+                "youtube":"https://www.youtube.com"
             },
-            "resumeDownLink":"www.heroku.com/uploads/myresume.pdf",
+            "resumeDownLink":"https://www.heroku.com/uploads/myresume.pdf",
             "aboutDescription": "I have more than 7 years of professional experience in User Interface and Application development using web technologies for building content management systems, eCommerce applications, microsites, landing pages, email newsletters, etc. Currently working as UI Developer with Langoor Ditigal Pvt Ltd., I am adept at developing web-based application systems with highly interactive user interfaces, rich user experiences, building custom responsive themes & functionality.",
             "mobile":"7338324752",
             "email": "syedbaji8@gmail.com",
@@ -134,7 +134,7 @@
             "works": [
                 {
                     "imageSrcUrl": "/images/livayur.png",
-                    "hrefLink":"www.livayur.com"
+                    "hrefLink":"https://www.livayur.com"
                 },
                 {
                     "imageSrcUrl": "/images/home-clearance-premium.jpg",
@@ -147,6 +147,10 @@
                 {
                     "imageSrcUrl": "/images/prathima.png",
                     "hrefLink":"https://prathimahospitals.com/"
+                },
+                {
+                    "imageSrcUrl": "/images/ammaphysiotherapy.png",
+                    "hrefLink":"https://ammaphysiotherapy.com/"
                 }
             ]
         }
@@ -168,9 +172,9 @@
             },
             "resumeDownLink":"www.heroku.com/uploads/myresume.pdf",
             "aboutDescription": "Pellentesque pellentesque, ipsum sit amet auctor accumsan, odio tortor bibendum massa, sit amet ultricies ex lectus scelerisque nibh. Ut non sodales.",
-            "mobile":"7338324752",
-            "email": "syedbaji8@gmail.com",
-            "address": "Bengaluru, HSR Layout",
+            "mobile":"9666349905",
+            "email": "arja.bhavani@gmail.com",
+            "address": "Bengaluru, Bilekahalli",
             "education": [
                 {
                     "dateFrom": 2010,

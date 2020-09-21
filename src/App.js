@@ -13,6 +13,7 @@ import apidata from './components/api/UserData.json'
 function App(props) {
   const theme = 'dark'
   const [isLoading, setisLoading] = useState(true);
+  const [isAdmin, setisAdmin] = useState(true);
   const [data, setData] = useState([]);
   const [userid, setUserId] = useState('')
   const windowWidth = window.innerWidth;
@@ -37,7 +38,7 @@ function App(props) {
   }
   useEffect(() => {
     setData(apidata)
-    setUserId('balabhavani');
+    setUserId('syedbaji8');
   }, [])
   useLayoutEffect(() => {
     const windowWidthInit = () => {
@@ -93,7 +94,7 @@ function App(props) {
                   </div>
                 </div>
                 <div className="col-lg-1 p-0 last-block desktop-navigation-block br-30 d-none d-lg-block">
-                  <Navigation active={rendercomponent} onClickGotoComponentFn={onClickGotoComponentFn} />
+                  <Navigation isAdmin={isAdmin} active={rendercomponent} onClickGotoComponentFn={onClickGotoComponentFn} />
                 </div>
               </div>
             </div>

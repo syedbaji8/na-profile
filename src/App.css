@@ -37,6 +37,10 @@ button.nav-iconn{
   color: white;
   position: relative;
 }
+button.admin-button:hover a, button.admin-button:hover a i{
+  background: none;
+  color: var(--white);
+}
 @media (min-width: 992px){
   .profile-pic-block{
     max-width: 175px !important;
